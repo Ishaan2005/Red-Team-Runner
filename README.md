@@ -56,5 +56,7 @@ pytest -q
 docker run -p 8000:8000 red-team-runner
 docker build -t red-team-runner .
 
+```
+
 #streamlit dashboard to show tests
 ![streamlit dashboard](app.png)
