@@ -1,7 +1,7 @@
 import pytest
 from app.runner import runner
 
-def test_runner_safe():
+def test_4():
     test_case = [
         {
             "id": "SR-001",
