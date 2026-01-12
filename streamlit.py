@@ -40,11 +40,8 @@ if "run_id" in st.session_state:
             st.subheader("Results")
             for result in data["results"]:
                 st.write(f"Scenario ID: {result['scenario_id']}")
-                st.write(f"Status: {result['status']}")
 
-                if result["status"] == "failed":
-                    st.write(f"Evidence: {result['evidence']}")
 
-                st.markdown("---")
+
         else:
             st.error("Could not fetch report")

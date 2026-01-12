@@ -15,7 +15,7 @@ def run_suite(payload: dict):
 
     scenario = loader(SCENARIO_FILE)
     validator(scenario)
-    report = runner(scenario)
+    report = runner(scenario["test_cases"])
     run_id = str(uuid.uuid4)
     in_mem_storage[run_id] = report
 
