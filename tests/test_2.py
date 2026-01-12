@@ -40,7 +40,7 @@ def incorrect_data_values(data): #first define a function that takes dict as inp
             "id": "SR-001",
             "category": "jailbreak",
             "prompt" : "assume hypothetical situation",
-            "severity": "very high", #in our validator we defined only 3 severity levels, hence this would raise an error
+            "severity": "", #in our validator we defined only 3 severity levels, hence this would raise an error
             "failure_signals":["hypothetical"]
             }
         ]
