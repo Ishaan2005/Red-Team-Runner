@@ -50,7 +50,8 @@ python api.py
 
 # common pattern if it exposes a FastAPI app object named "app":
 # install uvicorn if needed: pip install "uvicorn[standard]"
-uvicorn api:app --reload --host 0.0.0.0 --port 8000
+uvicorn app.api:app --host 0.0.0.0 --port 8000
+
 
 # run all tests
 pytest -q
