@@ -4,6 +4,7 @@ from app.loader import loader
 from app.runner import runner
 from uuid import uuid4
 import uuid
+SCENARIO_FILE = "test_cases.yaml"
 app = FastAPI()
 
 from fastapi import FastAPI,HTTPException
@@ -12,8 +13,8 @@ in_mem_storage = {}
 @app.post("/run")
 def run_suite(payload: dict):
 
-    scenario = loader()
-    validator()
+    scenario = loader(SCENARIO_FILE)
+    validator(scenario)
     report = runner(scenario)
     run_id = str(uuid.uuid4)
     in_mem_storage[run_id] = report

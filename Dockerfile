@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN pip install --no-cache-dir fastapi uvicorn pyyaml
+RUN pip install --no-cache-dir fastapi uvicorn pyyaml streamlit requests
 
 EXPOSE 8000
 
