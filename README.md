@@ -3,6 +3,9 @@
 Minimal, focused instructions for running and testing the code that exists in this repository.
 
 ---
+# streamlit dashboard to show tests
+![streamlit dashboard](app.png)
+
 
 ## What this repository contains (your setup)
 - `app/` — application code (runner, adapters, detectors, CLI — inspect for exact modules).
@@ -58,5 +61,3 @@ docker build -t red-team-runner .
 
 ```
 
-#streamlit dashboard to show tests
-![streamlit dashboard](app.png)
