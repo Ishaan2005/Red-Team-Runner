@@ -1,6 +1,6 @@
 
 import yaml
-#pip install PyYAML, the pyyaml libraryused to parse and work on yaml files
+#pip install PyYAML, the pyyaml library used to parse and work on yaml files
 #there are 2 extensions for yaml files .yaml and .yml
 #we will also be using file handling to read the yaml file
 
