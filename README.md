@@ -1,5 +1,8 @@
 # Red-Team-Runner
 ![Python](https://img.shields.io/badge/python-3.9+-blue.svg)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?logo=docker&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?logo=fastapi)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=Streamlit&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Repo Size](https://img.shields.io/github/repo-size/Ishaan2005/Red-Team-Runner)
 ![Views](https://komarev.com/ghpvc/?username=Ishaan2005&repo=Red-Team-Runner&label=Views&color=0078d7&style=flat)
@@ -12,7 +15,7 @@ A red team runner designed to test an LLM's capabilities against threats like pr
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 Red-Team-Runner/
