@@ -1,7 +1,10 @@
-# Red-Team-Runner — Quick run guide
+# Red-Team-Runner
 
-Minimal, focused instructions for running and testing the code that exists in this repository.
+"LLMs only possess statistical knowledge about word patterns, not true comprehension of ideas, facts, or emotions"
 
+When working with LLMS and GenAI, there are a lot of things that could go wrong from training, accuracy scores, integration, pipelines breaking. This Project and Repository tries to solve one of these issues - Security in   GenAI.
+
+What the app does is, it tries to classify a deterministic chatbots output to determine whether the chatbot failed or not. Ofcourse this isn't that extendable to a real life chatbot / GenAI handling dynamic and real human requests, but one can see how a logic to do that would work.
 ---
 # streamlit dashboard to show tests
 ![streamlit dashboard](app.png)
