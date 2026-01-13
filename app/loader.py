@@ -4,9 +4,11 @@ import yaml
 #there are 2 extensions for yaml files .yaml and .yml
 #we will also be using file handling to read the yaml file
 
-file_path = "E:\clang\test_cases.yaml"
-def loader(file_path):
-    with open(file_path,'r')as file:
+
+def loader(file):
+    if file is None:
+       raise(ValueError) 
+    with open(file,'r')as file:
         data = yaml.safe_load(file)
         return data
 
