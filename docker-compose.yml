@@ -7,6 +7,10 @@ services:
       - "8000:8000"
 
   streamlit:
+    environment:
+      - API_URL = https://api:8000 #was initially localhost, means running inside the same container
+      # streamlit calls itself
+      # changing it to api, a service name
     build: .
     command: streamlit run streamlit.py --server.port=8501 --server.address=0.0.0.0
     ports:

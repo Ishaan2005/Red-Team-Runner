@@ -1,4 +1,3 @@
-import pytest
 from app.runner import runner
 
 def test_3():

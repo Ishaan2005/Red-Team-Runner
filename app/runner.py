@@ -1,5 +1,5 @@
-from datetime import datetime
 from app.chatbot import chatbot
+from datetime import datetime,timezone
 
 def runner(test_cases):
     failed = 0
@@ -35,7 +35,7 @@ def runner(test_cases):
            "passed" : total_cases - failed,
            "failed" : failed
          },
-        "created_at": datetime.now(),
+        "created_at": datetime.now(timezone.utc),
         "results": results
     }
 
