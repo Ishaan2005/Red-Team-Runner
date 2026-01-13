@@ -9,9 +9,6 @@ What the app does is, it tries to classify a deterministic chatbots output to de
 
 
 ---
-### streamlit dashboard to show tests
-![streamlit dashboard](app.png)
-
 
 ## Repository Structure:
 
@@ -44,6 +41,7 @@ Red-Team-Runner/
 ├── streamlit.py
 └── test_cases.yaml
 
+---
 
 
 ## What the repository contains 
@@ -59,15 +57,6 @@ Red-Team-Runner/
 - `streamlit.py` - streamlit dashboard
 - `README.md` — this file.
 
----
-
-## Quick prerequisites
-- Python 3.8+ 
-- Docker Desktop
-- `virtualenv` / `venv` for isolated Python environment for better package isoloation and lesser package version conflicts
-- `pip` available
-
----
 
 ## 1) Local — prepare environment
 ```bash
