@@ -24,6 +24,7 @@ def run_suite(payload: dict):
 @app.get("/report/{run_id}")
 def get_report(run_id: str):
     if run_id not in in_mem_storage:
-        raise HTTPException(status_code = 404)
+        raise HTTPException(status_code = 404, detail = "Error")
+        #removed 404 as a string and added error detail
     
     return in_mem_storage[run_id]
