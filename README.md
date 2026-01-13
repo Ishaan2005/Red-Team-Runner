@@ -1,7 +1,5 @@
 # Red-Team-Runner
 
-"LLMs only possess statistical knowledge about word patterns, not true comprehension of ideas, facts, or emotions"
-
 When working with LLMS and GenAI, there are a lot of things that could go wrong from training, accuracy scores, integration, pipelines breaking. This Project and Repository tries to solve one of these issues - Security in   GenAI.
 
 What the app does is, it tries to classify a deterministic chatbots output to determine whether the chatbot failed or not. Ofcourse this isn't that extendable to a real life chatbot / GenAI handling dynamic and real human requests, but one can see how a logic to do that would work.
@@ -15,23 +13,55 @@ What the app does is, it tries to classify a deterministic chatbots output to de
 ![streamlit dashboard](app.png)
 
 
-## What this repository contains (your setup)
-- `app/` — application code (runner, adapters, detectors, CLI — inspect for exact modules).
+## Repository Structure:
+
+Red-Team-Runner/
+├── pycache/
+├── app/
+│ ├── init.py
+│ ├── api.py
+│ ├── loader.py
+│ ├── runner.py
+│ └── chatbot.py
+├── tests/
+│ ├── init.py
+│ ├── test_1.py
+│ ├── test_2.py
+│ ├── test_3.py
+│ ├── test_4.py
+│ ├── test_5.py
+│ ├── test_6.py
+│ ├── test_7.py
+│ ├── test_8.py
+│ └── test_9.py
+├── Dockerfile
+├── README.md
+├── app.png
+├── docker-compose.yml
+├── pytest.ini
+├── streamlit.py
+└── test_cases.yaml
+
+
+## What the repository contains 
+- `app/` — main code folder 
+- `loader.py` - A fucntion that loads the use input YAML File
+- `runner.py` - A function that runs all the YAML Scenarios
+- `chatbit.py` - Deterministic chatbot if-else logic
 - `api.py` — simple REST API / server entrypoint.
 - `test_cases.yaml` — YAML scenarios used by the runner/tests.
-- `tests/` — pytest-based unit/integration tests (use these as usage examples).
+- `tests/` — pytest-based unit tests 
 - `Dockerfile` — container build instructions.
 - `pytest.ini` — pytest configuration.
+- `streamlit.py` - streamlit dashboard
 - `README.md` — this file.
-
-> If you need details about behavior, open the corresponding Python files in `app/` and `api.py` — they are the source of truth.
 
 ---
 
 ## Quick prerequisites
-- Python 3.8+ (recommended)
-- Docker (optional, to run the container)
-- (Optional) `virtualenv` / `venv` for isolated Python environment
+- Python 3.8+ 
+- Docker Desktop
+- `virtualenv` / `venv` for isolated Python environment for better package isoloation and lesser package version conflicts
 - `pip` available
 
 ---
