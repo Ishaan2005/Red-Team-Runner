@@ -9,38 +9,41 @@ What the app does is, it tries to classify a deterministic chatbots output to de
 
 
 ---
-# streamlit dashboard to show tests
+### streamlit dashboard to show tests
 ![streamlit dashboard](app.png)
 
 
 ## Repository Structure:
 
-Red-Team-Runner/
-├── pycache/
-├── app/
-│ ├── init.py
-│ ├── api.py
-│ ├── loader.py
-│ ├── runner.py
-│ └── chatbot.py
-├── tests/
-│ ├── init.py
-│ ├── test_1.py
-│ ├── test_2.py
-│ ├── test_3.py
-│ ├── test_4.py
-│ ├── test_5.py
-│ ├── test_6.py
-│ ├── test_7.py
-│ ├── test_8.py
-│ └── test_9.py
-├── Dockerfile
-├── README.md
-├── app.png
-├── docker-compose.yml
-├── pytest.ini
-├── streamlit.py
-└── test_cases.yaml
+
+```Red-Team-Runner/```
+```├── pycache/```
+```├── app/```
+```│   ├── init.py```
+```│   ├── api.py```
+```│   ├── loader.py```
+```│   ├── runner.py```
+```│   └── chatbot.py```
+```├── tests/```
+```│   ├── init.py```
+```│   ├── test_1.py```
+```│   ├── test_2.py```
+```│   ├── test_3.py```
+```│   ├── test_4.py```
+```│   ├── test_5.py```
+```│   ├── test_6.py```
+```│   ├── test_7.py```
+```│   ├── test_8.py```
+```│   └── test_9.py```
+```├── Dockerfile```
+```├── README.md```
+```├── app.png```
+```├── docker-compose.yml```
+```├── pytest.ini```
+```├── streamlit.py```
+```└── test_cases.yaml```
+
+
 
 
 ## What the repository contains 
