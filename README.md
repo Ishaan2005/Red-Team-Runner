@@ -1,17 +1,18 @@
 # Red-Team-Runner
+![Python](https://img.shields.io/badge/python-3.9+-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Repo Size](https://img.shields.io/github/repo-size/Ishaan2005/Red-Team-Runner)
+![Views](https://komarev.com/ghpvc/?username=Ishaan2005&repo=Red-Team-Runner&label=Views&color=0078d7&style=flat)
 
-When working with LLMS and GenAI, there are a lot of things that could go wrong from training, accuracy scores, integration, pipelines breaking. This Project and Repository tries to solve one of these issues - Security in   GenAI.
+When working with LLMS and GenAI, there are a lot of things that could go wrong from training, accuracy scores, integration, pipelines breaking. This Project and Repository tries to solve one of these issues - Security in GenAI.
 
 What the app does is, it tries to classify a deterministic chatbots output to determine whether the chatbot failed or not. Ofcourse this isn't that extendable to a real life chatbot / GenAI handling dynamic and real human requests, but one can see how a logic to do that would work.
 
-
- A red team runner designed to test an LLM's capabilities against threats like prompt injection, jail break, data exfiltration and toxic requests
-
+A red team runner designed to test an LLM's capabilities against threats like prompt injection, jail break, data exfiltration and toxic requests.
 
 ---
 
-## Repository Structure:
-
+## 📂 Repository Structure
 
 ```text
 Red-Team-Runner/
@@ -40,23 +41,6 @@ Red-Team-Runner/
 ├── pytest.ini
 ├── streamlit.py
 └── test_cases.yaml
-
----
-
----
-
-## What the repository contains 
-- `app/` — main code folder 
-- `loader.py` - A fucntion that loads the use input YAML File
-- `runner.py` - A function that runs all the YAML Scenarios
-- `chatbit.py` - Deterministic chatbot if-else logic
-- `api.py` — simple REST API / server entrypoint.
-- `test_cases.yaml` — YAML scenarios used by the runner/tests.
-- `tests/` — pytest-based unit tests 
-- `Dockerfile` — container build instructions.
-- `pytest.ini` — pytest configuration.
-- `streamlit.py` - streamlit dashboard
-- `README.md` — this file.
 
 
 ## 1) Local — prepare environment
