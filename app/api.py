@@ -4,7 +4,6 @@ from app.loader import loader
 from app.runner import runner
 from uuid import uuid4
 import uuid
-
 SCENARIO_FILE = "test_cases.yaml"
 app = FastAPI()
 

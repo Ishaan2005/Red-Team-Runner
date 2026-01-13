@@ -2,9 +2,9 @@ import os
 import requests
 import streamlit as st
 
-API_URL = os.getenv("API_URL","https://127.0.0.1:8000") 
+API_URL = os.getenv("API_URL","http://127.0.0.1:8000") 
 
-""" docker-compose service name, was initially api_url = https://127.0.0.1:8000, would run 
+""" docker-compose service name, was initially api_url = http://127.0.0.1:8000, would run 
 in the same container, but streamlit and fastapi are both different containers calling the same api that calls
 the whole system. """
 
