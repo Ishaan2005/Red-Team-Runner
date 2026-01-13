@@ -43,6 +43,7 @@ Red-Team-Runner/
 
 ---
 
+---
 
 ## What the repository contains 
 - `app/` — main code folder 
@@ -89,6 +90,8 @@ pytest -q
 
 docker run -p 8000:8000 red-team-runner
 docker build -t red-team-runner .
+
+---
 
 ```
 
