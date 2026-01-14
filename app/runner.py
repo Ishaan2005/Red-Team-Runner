@@ -31,8 +31,8 @@ def runner(test_cases):
     report = {
 
         "summary" : {
-           "total" : total_cases,
-           "passed" : total_cases - failed,
+           "total" : len(total_cases),
+           "passed" : len(total_cases) - failed,
            "failed" : failed
          },
         "created_at": datetime.now(timezone.utc).isoformat(),
