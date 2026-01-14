@@ -4,11 +4,12 @@ import yaml
 #there are 2 extensions for yaml files .yaml and .yml
 #we will also be using file handling to read the yaml file
 
+file_path = 'E:\clang\Red-Team-Runner\test_cases.yaml'
 
-def loader(file):
-    if file is None:
+def loader(file_path):
+    if file_path is None:
        raise(ValueError) 
-    with open(file,'r')as file:
+    with open(file_path,'r')as file:
         data = yaml.safe_load(file)
         return data
 

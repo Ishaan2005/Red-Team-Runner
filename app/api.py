@@ -10,7 +10,7 @@ app = FastAPI()
 in_mem_storage = {}
 
 @app.post("/run")
-def run_suite(payload: dict):
+def run_suite():
 
     scenario = loader(SCENARIO_FILE)
     validator(scenario)

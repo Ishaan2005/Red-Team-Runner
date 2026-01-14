@@ -1,4 +1,6 @@
+import pytest
 from app.validator import validator
+
 
 # Scenario schema validation rejects invalid scenario
 def correct_validator(data): #first define a function that takes dict as input
