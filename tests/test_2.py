@@ -3,7 +3,7 @@ from app.validator import validator
 
 
 # Scenario schema validation rejects invalid scenario
-def correct_validator(data): #first define a function that takes dict as input
+def test_correct_validator(data): #first define a function that takes dict as input
     data = {
         "test_cases" : [
             {
@@ -19,7 +19,7 @@ def correct_validator(data): #first define a function that takes dict as input
 
 
 #here we defined missing keys like prompt, failure_signals etc
-def incorrect_validator(data):
+def test_incorrect_validator(data):
     data = {
         "test_cases": [
             {
@@ -33,7 +33,7 @@ def incorrect_validator(data):
 
 
 
-def incorrect_data_values(data): #first define a function that takes dict as input, similar to the first function
+def test_incorrect_data_values(data): #first define a function that takes dict as input, similar to the first function
     data = {
         "test_cases" : [
             {
