@@ -48,7 +48,12 @@ Red-Team-Runner/
 
 #### What Each File does:
 
-1. ### loader.py
+#### 1. test_cases.yaml
+
+This is the file that has all the 10 scenarios of 4 different categories, we have chosen YAML Format due to its readability and ease of use, also it is a superset of JSON Files, so all json files by default are YAML
+
+#### 1. loader.py
+
 This is the file that loads the YAML File which is used to load the needed scenarios, each scenario has the following key - value pairs:
  - id
  - category 
@@ -62,4 +67,18 @@ category is used to identify the category out of the 4:
  - jailbreak
  - data exfiltration
  - toxic request
- 
+
+
+#### 2. Validator
+
+A file that validates the structure of the YAML File, whether the required inputs are present, whether the use the 
+appropriate data types like string, integer etc.
+
+
+#### 3. Chatbot
+
+A file that contains a if - else based deterministic chatbot, having all 4 cases
+
+#### 4. Runner 
+
+A file that runs all the scenarios from the loaded YAML File against the chatbot, to check what the chatbot resposnds to the input prompts.
