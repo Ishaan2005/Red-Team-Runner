@@ -88,19 +88,17 @@ Contains tests for loader, validator, runner, API and the CLI for performance mo
 
 ### How to run the Project
 
-docker info
+```bash
 # to get info of running, total containers, versions etc
+docker info
 
-docker compose down --remove-orphans
 # to remove remaining/orphan docker objects/images
+docker compose down --remove-orphans
 
 
-docker compose up --build
 # to build the docker container
+docker compose up --build
 
-
-
-## 1) Local — prepare environment
 ```bash
 # clone
 git clone https://github.com/Ishaan2005/Red-Team-Runner.git
@@ -116,28 +114,21 @@ source venv/bin/activate
 # install requirements
 pip install -r requirements.txt
 
-
-
 # to run the api standalone, use:
 uvicorn app.api:app --host 0.0.0.0 --port 8000
-
 
 # run all tests
 pytest -q
 
-
 # to run the docker container
 docker run -p 8000:8000 red-team-runner
 docker build -t red-team-runner .
-
-
 
 docker info
 # to get info of running, total containers, versions etc
 
 docker compose down --remove-orphans
 # to remove remaining/orphan docker objects/images
-
 
 docker compose up --build
 # to build the docker container
