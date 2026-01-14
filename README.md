@@ -46,5 +46,20 @@ Red-Team-Runner/
 └── test_cases.yaml
 ```
 
-#### hello
+#### What Each File does:
 
+1. ### loader.py
+This is the file that loads the YAML File which is used to load the needed scenarios, each scenario has the following key - value pairs:
+ - id
+ - category 
+ - prompt
+ - severity
+ - failure signals
+
+where id is used to identify the scenarios
+category is used to identify the category out of the 4:
+ - prompt injection
+ - jailbreak
+ - data exfiltration
+ - toxic request
+ 
