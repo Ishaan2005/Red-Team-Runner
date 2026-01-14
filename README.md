@@ -27,7 +27,6 @@ Red-Team-Runner/
 │   ├── runner.py
 │   └── chatbot.py
 ├── tests/
-│   ├── init.py
 │   ├── test_1.py
 │   ├── test_2.py
 │   ├── test_3.py
