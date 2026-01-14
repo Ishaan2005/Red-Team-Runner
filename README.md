@@ -99,7 +99,6 @@ docker compose down --remove-orphans
 # to build the docker container
 docker compose up --build
 
-```bash
 # clone
 git clone https://github.com/Ishaan2005/Red-Team-Runner.git
 cd Red-Team-Runner #to enter the directory
