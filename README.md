@@ -86,7 +86,7 @@ A file that runs all the scenarios from the loaded YAML File against the chatbot
 
 Contains tests for loader, validator, runner, API and the CLI for performance monitoring
 
-### How to run the Project
+## How to run the Project
 
 ```bash
 # to get info of running, total containers, versions etc
@@ -102,14 +102,16 @@ docker compose up --build
 ```bash
 # clone
 git clone https://github.com/Ishaan2005/Red-Team-Runner.git
-cd Red-Team-Runner
+cd Red-Team-Runner #to enter the directory
 
 # create a venv
 python -m venv venv
+
 # for macOS / Linux 
 source venv/bin/activate
+
 # Windows powershell
-# .\venv\Scripts\Activate.ps1
+.\venv\Scripts\Activate.ps1
 
 # install requirements
 pip install -r requirements.txt
