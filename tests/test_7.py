@@ -3,7 +3,7 @@ from fastapi import FastAPI,HTTPException
 app = FastAPI()
 client = TestClient(app)
 
-def test_get_report_returns_saved_report():
+def test_7():
     run = client.post("/run", json={"suite": "default"})
     run_id = run.json()["run_id"]
 

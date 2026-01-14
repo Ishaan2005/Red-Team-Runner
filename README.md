@@ -133,6 +133,9 @@ docker compose down --remove-orphans
 
 docker compose up --build
 # to build the docker container
+
+python cli.py run --suite default --out report.json
+# to run via the command line interface
+
 ```
-
-
+Note: Raw model outputs are intentionally not exposed beyond the runner to avoid unsafe content leakage.

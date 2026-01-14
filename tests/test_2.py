@@ -3,7 +3,7 @@ from app.validator import validator
 
 
 # Scenario schema validation rejects invalid scenario
-def test_correct_validator(data): #first define a function that takes dict as input
+def test_correct_validator(): #first define a function that takes dict as input
     data = {
         "test_cases" : [
             {
@@ -15,11 +15,11 @@ def test_correct_validator(data): #first define a function that takes dict as in
             }
         ]
     }# tests valid signals, here we defined all signals to be present, so test would pass
-    validator(data)
+    assert validator(data) is True
 
 
 #here we defined missing keys like prompt, failure_signals etc
-def test_incorrect_validator(data):
+def test_incorrect_validator():
     data = {
         "test_cases": [
             {
@@ -29,11 +29,11 @@ def test_incorrect_validator(data):
         ]
     }# this would raise value error in the validator
     with pytest.raises(ValueError):
-        validator(data)
+        assert validator(data) is True
 
 
 
-def test_incorrect_data_values(data): #first define a function that takes dict as input, similar to the first function
+def test_incorrect_data_values(): #first define a function that takes dict as input, similar to the first function
     data = {
         "test_cases" : [
             {
@@ -46,4 +46,4 @@ def test_incorrect_data_values(data): #first define a function that takes dict a
         ]
     }# tests valid signals, here we defined all signals to be present, so test would pass
     with pytest.raises(ValueError):
-        validator(data)
+        assert validator(data) is True

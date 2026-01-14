@@ -2,17 +2,17 @@ import os
 import requests
 import streamlit as st
 
-API_URL = os.getenv("API_URL","http://127.0.0.1:8000") 
-
-""" docker-compose service name, was initially api_url = http://127.0.0.1:8000, would run 
+"""docker-compose service name, was initially api_url = http://127.0.0.1:8000, would run 
 in the same container, but streamlit and fastapi are both different containers calling the same api that calls
 the whole system. """
+
+API_URL = os.getenv("API_URL","http://127.0.0.1:8000") 
 
 st.title("Red Team Runner Dashboard")
 
 st.write("This dashboard runs a red-team test suite and shows results.")
 
-# --- RUN BUTTON ---
+
 if st.button("Run Test Suite"):
     response = requests.post(
         f"{API_URL}/run",
@@ -26,7 +26,8 @@ if st.button("Run Test Suite"):
     else:
         st.error("Failed to start run")
 
-# --- SHOW REPORT ---
+
+
 if "run_id" in st.session_state:
     st.write(f"Run ID: {st.session_state['run_id']}")
 
